@@ -12,6 +12,7 @@ const Login = () => {
     password: "",
   });
   const [loading, setLoading] = useState(false);
+  const[refresh, setRefresh] = useState(false);
 
   const { dispatch } = useContext(AuthContext);
 
@@ -51,10 +52,12 @@ const Login = () => {
 
       setLoading(false);
       toast.success(result.message);
+      setRefresh(prev=>!prev);
       navigate("/home");
     } catch (error) {
       toast.error(error.message);
       setLoading(false);
+      setRefresh(prev=>!prev);
       setFormData({
         name:"",
         password:""
@@ -64,7 +67,7 @@ const Login = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
-}, [])
+}, [refresh])
 
   return (
     <section className="px-5 md:px-0 ">

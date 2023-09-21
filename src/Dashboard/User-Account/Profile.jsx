@@ -4,8 +4,10 @@ import { BASE_URL, token } from "../../config";
 import uploadImageToCloudinary from "../../utils/uploadCloudinary";
 
 import { toast } from "react-toastify";
+import HashLoader from "react-spinners/HashLoader";
 
 const Profile = ({ userData }) => {
+  const [loading,setLoading] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -40,6 +42,7 @@ const Profile = ({ userData }) => {
 
   const updateUserHandler = async e => {
     e.preventDefault();
+    setLoading(true)        
 
     try {
       const res = await fetch(`${BASE_URL}/users/${userData._id}`, {
@@ -56,15 +59,21 @@ const Profile = ({ userData }) => {
       if (!res.ok) {
         return toast.error(result.message);
       }
-
       toast.success("successfully update");
+      setLoading(false)
     } catch (err) {
+      setLoading(false)
+      toast.error(err);
       console.log(err);
     }
   };
 
   return (
     <div>
+      {loading? 
+        <div className="flex items-center justify-center w-full h-full">
+            <HashLoader color="#0067FF" />
+        </div>:
       <form onSubmit={updateUserHandler}>
         <div className="mb-5">
           <input
@@ -167,6 +176,7 @@ const Profile = ({ userData }) => {
           </button>
         </div>
       </form>
+      }
     </div>
   );
 };
