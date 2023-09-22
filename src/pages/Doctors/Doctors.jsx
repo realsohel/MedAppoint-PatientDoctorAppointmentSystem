@@ -72,7 +72,7 @@ const Doctors = () => {
           {!loading && !error && (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
               {doctors?.map((doctor)=>{
-                return <div key={doctor.id}>
+                  return <div key={doctor._id}> 
                 <DoctorCard doctor={doctor}  />
               </div>
               }) }

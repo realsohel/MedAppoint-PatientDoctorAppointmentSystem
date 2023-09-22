@@ -49,7 +49,7 @@ const Testimonial = () => {
                         </div>
 
                         <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-                            “I hope you will be here, Lorem ipsum dolor sit amet.” 
+                        The services that I received is excellent. Dr.Saluja and the staff are friendly and ensure that I am properly informed about my health and care. I would have no qualms in recommending them to friendly and friends.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -59,7 +59,7 @@ const Testimonial = () => {
                             <img src={patientAvatar} alt="patientAvatar" />
                             <div>
                                 <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor">
-                                    Mohd Sohel Salmani
+                                    Birju Yadav
                                 </h4>
                                 <div className="flex items-center gap-[2px]">
                                     <HiStar className='text-yellowColor w-[18px] h-5'/>
@@ -72,7 +72,7 @@ const Testimonial = () => {
                         </div>
 
                         <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-                            “I hope you will be here, Lorem ipsum dolor sit amet.” 
+                        Great medical office, wonderful and warm experience from start to finish. Appreciate Dr.Farheen taking time to go over the diagnosis clearly and treatment options. Was referred over by my general doctor and can see why. 
                         </p>
                     </div>
                 </SwiperSlide>
@@ -82,7 +82,7 @@ const Testimonial = () => {
                             <img src={patientAvatar} alt="patientAvatar" />
                             <div>
                                 <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor">
-                                    Mohd Sohel Salmani
+                                    Arvind mera sathi
                                 </h4>
                                 <div className="flex items-center gap-[2px]">
                                     <HiStar className='text-yellowColor w-[18px] h-5'/>
@@ -95,7 +95,7 @@ const Testimonial = () => {
                         </div>
 
                         <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-                            “I hope you will be here, Lorem ipsum dolor sit amet.” 
+                        Dr.Nannu lal gets it. From his excellent treatment, curiosity, investigative mind and ability to connect, you know where you stand immediately and what next steps look like. 
                         </p>
                     </div>
                 </SwiperSlide>
@@ -105,7 +105,7 @@ const Testimonial = () => {
                             <img src={patientAvatar} alt="patientAvatar" />
                             <div>
                                 <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor">
-                                    Mohd Sohel Salmani
+                                    Shyaam Bihari
                                 </h4>
                                 <div className="flex items-center gap-[2px]">
                                     <HiStar className='text-yellowColor w-[18px] h-5'/>
@@ -118,7 +118,7 @@ const Testimonial = () => {
                         </div>
 
                         <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-                            “I hope you will be here, Lorem ipsum dolor sit amet.” 
+                        Dr. Arvind is extremely professional: he takes time to listen and time to explain. A first rate professional experience. Completely satisfied with Dr. (Name) and all the support staff.
                         </p>
                     </div>
                 </SwiperSlide>
@@ -128,7 +128,7 @@ const Testimonial = () => {
                             <img src={patientAvatar} alt="patientAvatar" />
                             <div>
                                 <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor">
-                                    Mohd Sohel Salmani
+                                    Priya Verma
                                 </h4>
                                 <div className="flex items-center gap-[2px]">
                                     <HiStar className='text-yellowColor w-[18px] h-5'/>
@@ -141,7 +141,7 @@ const Testimonial = () => {
                         </div>
 
                         <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-                            “I hope you will be here, Lorem ipsum dolor sit amet.” 
+                        Really thorough, detailed care. Dr. Zeeshan cares about his patients and even gave me a free visit when I complained of post-op pain and I was transitioning between insurances.
                         </p>
                     </div>
                 </SwiperSlide>

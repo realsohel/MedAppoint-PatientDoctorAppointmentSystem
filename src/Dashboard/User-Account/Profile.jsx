@@ -71,7 +71,7 @@ const Profile = ({ userData }) => {
   return (
     <div>
       {loading? 
-        <div className="flex items-center justify-center w-full h-full">
+        <div className="mt-20 flex items-center justify-center w-full h-full">
             <HashLoader color="#0067FF" />
         </div>:
       <form onSubmit={updateUserHandler}>
