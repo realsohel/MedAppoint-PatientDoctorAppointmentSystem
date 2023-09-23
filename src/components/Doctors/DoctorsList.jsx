@@ -1,5 +1,4 @@
 import DoctorCard from "./DoctorCard.jsx";
-import { doctors } from "../../assets/data/doctors";
 import { BASE_URL } from "../../config.js";
 import useFetchData from "../../hooks/useFetchData.js";
 import HashLoader from "react-spinners/HashLoader.js";

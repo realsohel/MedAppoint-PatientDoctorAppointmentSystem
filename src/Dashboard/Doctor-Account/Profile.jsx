@@ -5,9 +5,11 @@ import uploadImageToCloudinary from "../../utils/uploadCloudinary";
 import { AiOutlineDelete } from "react-icons/ai";
 
 import { toast } from "react-toastify";
+import HashLoader from "react-spinners/HashLoader";
 
 const Profile = ({ doctorData }) => {
   const [selectedFile, setSelectedFile] = useState(null);
+  const[loading,setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -55,7 +57,8 @@ const Profile = ({ doctorData }) => {
 
   const updateDoctorHandler = async e => {
     e.preventDefault();
-    console.log(formData);
+    // console.log(formData);
+    setLoading(true);
     try {
       const res = await fetch(`${BASE_URL}/doctors/${doctorData._id}`, {
         method: "put",
@@ -73,8 +76,10 @@ const Profile = ({ doctorData }) => {
       }
 
       toast.success("successfully update");
+      setLoading(false);
     } catch (err) {
       console.log(err);
+      setLoading(false);
     }
   };
 
@@ -160,7 +165,13 @@ const Profile = ({ doctorData }) => {
   };
 
   return (
+    <section>
+      {
+        loading?<div className="flex items-center justify-center w-full h-full">
+        <HashLoader color="#0067FF" />
+      </div>:
     <div className="bg-white p-4">
+      
       <h2 className="text-headingColor font-bold text-[24px] leading-9 mb-10">
         Profile Information
       </h2>
@@ -228,7 +239,6 @@ const Profile = ({ doctorData }) => {
                 <option value="">Select</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
-                <option value="other">Other</option>
               </select>
             </div>
             <div>
@@ -243,6 +253,7 @@ const Profile = ({ doctorData }) => {
                 <option value="surgeon">Surgeon</option>
                 <option value="neurologist">Neurologist</option>
                 <option value="dermatologist">Dermatologist</option>
+                <option value="psychiatrist">Psychiatrist</option>
               </select>
             </div>
 
@@ -523,6 +534,8 @@ const Profile = ({ doctorData }) => {
         </div>
       </form>
     </div>
+}
+    </section>
   );
 };
 

@@ -39,6 +39,9 @@ const FeedbackForm = () => {
 
       setLoading(false);
       toast.success(result.message);
+      setReviewText("")
+      setRating(0);
+      setHover(0);
     } catch (error) {
       toast.error(error.message);
       setLoading(false);
