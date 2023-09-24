@@ -28,24 +28,24 @@ const Home = () => {
             {/* ====== hero content ========== */}
             <div>
               <div className=" lg:w-[570px]">
-                <h1 className="text-headingColor text-[36px] leading-[46px] md:text-[60px] md:leading-[70px] font-[800] ">
+                <h1 className="fade-in text-headingColor text-[36px] leading-[46px] md:text-[60px] md:leading-[70px] font-[800] ">
                   All doctors treat, but a good doctor lets nature heal.
                 </h1>
-                <p className="text__para">
+                <p className="  text__para">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Natus quaerat cumque fugit, perspiciatis cum nemo aperiam, aut
                   quia earum amet architecto, modi odio. Soluta unde ducimus
                   perferendis?
                 </p>
                 <Link to="/doctors">
-                  <button className="btn">Request an Appointment </button>
+                  <button className="btn fade-in">Request an Appointment </button>
                 </Link>
               </div>
 
               {/* {Counter} */}
               <div className="mt-[30px] lg:mt-[70px] flex flex-col md:flex-row lg:items-center gap-5 lg:gap-[30px]">
                 <div>
-                  <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
+                  <h2 className="typewriter text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
                     25+
                   </h2>
                   <span className="w-[100px] h-2 rounded-full bg-purpleColor block mt-[-14px]"></span>
@@ -53,7 +53,7 @@ const Home = () => {
                 </div>
 
                 <div>
-                  <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
+                  <h2 className="typewriter text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
                     15+
                   </h2>
                   <span className="w-[100px] h-2 rounded-full bg-irisBlueColor block mt-[-14px]"></span>
@@ -61,7 +61,7 @@ const Home = () => {
                 </div>
 
                 <div>
-                  <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
+                  <h2 className="typewriter text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor">
                     100%
                   </h2>
                   <span className="w-[100px] h-2 rounded-full bg-yellowColor block mt-[-14px]"></span>
@@ -74,16 +74,16 @@ const Home = () => {
 
             {/* =========== hero img ============ */}
             <div className="flex gap-[30px] justify-end">
-              <div>
-                <img className="w-full" src={heroImg01} alt="hero_img" />
+              <div className="slide-right">
+                <img className=" w-full" src={heroImg01} alt="hero_img" />
               </div>
               <div className="mt-[2px]">
                 <img
-                  className="w-full mb-[30px]"
+                  className="fade-in w-full mb-[30px]"
                   src={heroImg02}
                   alt="hero_img"
                 />
-                <img className="w-full" src={heroImg03} alt="hero_img" />
+                <img className="slide-left w-full" src={heroImg03} alt="hero_img" />
               </div>
             </div>
           </div>
@@ -238,7 +238,7 @@ const Home = () => {
         <div className="container">
           <div className="lg:w-[880px] mx-auto">
             <h2 className="heading text-center">Our great doctors</h2>
-            <p className="text__para text-center">
+            <p className=" text__para text-center">
               World-class care for everyone. Our health System offers unmatched,
               expert health care.
             </p>

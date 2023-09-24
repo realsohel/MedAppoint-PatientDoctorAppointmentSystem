@@ -5,6 +5,7 @@ import convertTime from "../../utils/convertTime";
 import { BASE_URL, token } from "./../../config";
 import { AuthContext } from "../../context/AuthContext";
 import { toast } from "react-toastify";
+import { Navigate } from "react-router-dom";
 
 const SidePanel = ({ ticketPrice, timeSlots, doctorId }) => {
   const {token,role} = useContext(AuthContext)
@@ -12,7 +13,7 @@ const SidePanel = ({ ticketPrice, timeSlots, doctorId }) => {
   const bookingHandler = async () => {
     if(token){
       if(role==="doctor"){
-        toast.error("You are not eligible to get appointment")
+        toast.error("You are unauthorized to get the appointment")
         return ;
       }
       try {
@@ -27,6 +28,7 @@ const SidePanel = ({ ticketPrice, timeSlots, doctorId }) => {
         );
   
         const data = await response.json();
+        console.log(data)
   
         if (data.session.url) {
           window.location.href = data.session.url;

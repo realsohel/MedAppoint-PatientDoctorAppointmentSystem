@@ -11,7 +11,7 @@ const DoctorAbout = ({ about, name, qualifications, experiences }) => {
     <div className="bg-white rounded-md">
       <div className="px-4 mt-4">
         <h3 className="mt-4 text-[20px] leading-[30px] text-headingColor font-semibold flex gap-2 items-center">
-          About of
+          About 
           <span className="text-irisBlueColor font-bold text-[24px] leading-9">
             {name}
           </span>

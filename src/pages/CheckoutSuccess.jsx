@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const CheckoutSuccess = () => {
+  toast.success("Done")
   return (
     <div className="bg-gray-100 h-screen">
       <div className="bg-white p-6  md:mx-auto">

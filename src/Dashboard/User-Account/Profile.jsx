@@ -59,7 +59,7 @@ const Profile = ({ userData }) => {
       if (!res.ok) {
         return toast.error(result.message);
       }
-      toast.success("successfully update");
+      toast.success("Profile updated successfully");
       setLoading(false)
     } catch (err) {
       setLoading(false)
