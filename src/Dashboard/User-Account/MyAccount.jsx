@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 // import userProfile from "../../assets/images/doctor-img01.png";
 import Profile from "./Profile";
 import MyBookings from "./MyBookings";
@@ -27,6 +27,10 @@ const MyAccount = () => {
     user(null);
   };
 
+  useEffect(()=>{
+    [userData.bloodType]
+  },[userData.bloodType])
+
   return (
     <section>
       <div className="max-w-[1170px] px-5 mx-auto">
@@ -45,8 +49,8 @@ const MyAccount = () => {
 
         {!loading && !error && (
           <div className="grid md:grid-cols-3 gap-10 ">
-            <div className=" px-[30px] pb-[50px] rounded-md  ">
-              <div className="flex items-center justify-center">
+            <div className=" px-[30px] pb-[50px] rounded-md  bg-white h-[400px] " >
+              <div className="flex items-center justify-center py-2">
                 <figure className="w-[100px] h-[100px] rounded-full border-2 border-solid border-[#0067FF]">
                   <img
                     src={userData?.photo}
@@ -79,9 +83,6 @@ const MyAccount = () => {
                 >
                   Logout
                 </button>
-                <button className="w-full bg-red-600 mt-4 p-3 rounded-md text-white text-[16px] leading-7">
-                  Delete Account
-                </button>
               </div>
             </div>
 
@@ -107,7 +108,7 @@ const MyAccount = () => {
 
               <div className="mt-[50px]">
                 {tab === "bookings" && (
-                  <div>
+                  <div className="bg-white py-2 px-2">
                     <h2 className="heading text-[30px]">My bookings</h2>
                     <MyBookings />
                   </div>

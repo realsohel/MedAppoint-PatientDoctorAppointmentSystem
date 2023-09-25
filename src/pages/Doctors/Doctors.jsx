@@ -34,7 +34,9 @@ const Doctors = () => {
     <>
       <section className="bg-[#fff9ea]">
         <div className="container text-center">
-          <h2 className="heading">Find a Doctor</h2>
+          <div className="mx-auto w-[60%]">
+          <h2 className="heading typewriter  mx-auto w-[50%]">Find a Doctor</h2>
+          </div>
           <div className="max-w-[570px] mx-auto mt-[30px] bg-[#0066ff2c] rounded-md flex items-center justify-between ">
             <input
               className="py-4 pl-4 pr-2 focus:outline-none cursor-pointer w-full bg-transparent placeholder:text-textColor"

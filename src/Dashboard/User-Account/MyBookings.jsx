@@ -22,7 +22,7 @@ const MyBookings = () => {
       )}
 
       {error && (
-        <div className="flex items-center justify-center w-full h-full">
+        <div className="flex items-center justify-center w-full h-full ">
           <h3 className="text-headingColor text-[20px] font-semibold leading-[30px]">
             {error}
           </h3>
@@ -30,7 +30,7 @@ const MyBookings = () => {
       )}
 
       {!loading && !error && (
-        <div className="grid grid-cols-1  lg:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1  lg:grid-cols-2 gap-5 bg-white">
           {myAppointments?.map(doctor => (
             <DoctorCard doctor={doctor} key={doctor.id} />
           ))}

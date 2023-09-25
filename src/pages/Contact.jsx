@@ -59,7 +59,7 @@ const Contact = () => {
   return (
     <section>
       <div className="px-4 mx-auto max-w-screen-md bg-white p-4 rounded">
-        <h2 className="heading text-center ">Contact Us</h2>
+        <h2 className="heading text-center typewriter mx-auto w-[50%]">Contact Us</h2>
         <p className="mb-8 lg:mb-16 font-light text-center text__para">
           Got a technical issue? Want to send feedback about a beta feature? Let
           us know.
